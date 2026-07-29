@@ -2,9 +2,10 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 const repository = 'https://github.com/GT-610/Aviqtl-Plus-docs'
 
-const englishSidebar: DefaultTheme.SidebarItem[] = [
+const englishUserSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: 'Start here',
+    collapsed: false,
     items: [
       { text: 'Welcome', link: '/guide/' },
       { text: 'Install AviQtl-Plus', link: '/guide/installation' },
@@ -13,18 +14,29 @@ const englishSidebar: DefaultTheme.SidebarItem[] = [
   },
   {
     text: 'User guide',
+    collapsed: false,
     items: [
       { text: 'Interface overview', link: '/guide/interface' },
       { text: 'Projects and media', link: '/guide/projects-media' },
       { text: 'Timeline editing', link: '/guide/timeline' },
       { text: 'Effects and animation', link: '/guide/effects-animation' },
-      { text: 'Exporting', link: '/guide/exporting' },
-      { text: 'Troubleshooting', link: '/guide/troubleshooting' },
-      { text: 'Glossary', link: '/reference/glossary' }
+      { text: 'Exporting', link: '/guide/exporting' }
     ]
   },
   {
+    text: 'Help and reference',
+    collapsed: true,
+    items: [
+      { text: 'Troubleshooting', link: '/guide/troubleshooting' },
+      { text: 'Glossary', link: '/reference/glossary' }
+    ]
+  }
+]
+
+const englishDeveloperSidebar: DefaultTheme.SidebarItem[] = [
+  {
     text: 'Developer documentation',
+    collapsed: false,
     items: [
       { text: 'Developer overview', link: '/developer/' },
       { text: 'Build from source', link: '/developer/building' },
@@ -34,15 +46,32 @@ const englishSidebar: DefaultTheme.SidebarItem[] = [
   },
   {
     text: 'Contributing',
+    collapsed: false,
     items: [
       { text: 'Documentation guide', link: '/contributing/documentation' }
+    ]
+  },
+  {
+    text: 'User documentation',
+    collapsed: true,
+    items: [
+      { text: 'User guide', link: '/guide/' },
+      { text: 'Make your first video', link: '/guide/first-video' }
     ]
   }
 ]
 
-const chineseSidebar: DefaultTheme.SidebarItem[] = [
+const englishSidebar: DefaultTheme.Sidebar = {
+  '/guide/': englishUserSidebar,
+  '/reference/': englishUserSidebar,
+  '/developer/': englishDeveloperSidebar,
+  '/contributing/': englishDeveloperSidebar
+}
+
+const chineseUserSidebar: DefaultTheme.SidebarItem[] = [
   {
     text: '从这里开始',
+    collapsed: false,
     items: [
       { text: '欢迎', link: '/zh-CN/guide/' },
       { text: '安装 AviQtl-Plus', link: '/zh-CN/guide/installation' },
@@ -51,18 +80,29 @@ const chineseSidebar: DefaultTheme.SidebarItem[] = [
   },
   {
     text: '用户手册',
+    collapsed: false,
     items: [
       { text: '界面概览', link: '/zh-CN/guide/interface' },
       { text: '项目与媒体', link: '/zh-CN/guide/projects-media' },
       { text: '时间线编辑', link: '/zh-CN/guide/timeline' },
       { text: '效果与动画', link: '/zh-CN/guide/effects-animation' },
-      { text: '导出', link: '/zh-CN/guide/exporting' },
-      { text: '故障排除', link: '/zh-CN/guide/troubleshooting' },
-      { text: '术语表', link: '/zh-CN/reference/glossary' }
+      { text: '导出', link: '/zh-CN/guide/exporting' }
     ]
   },
   {
+    text: '帮助与参考',
+    collapsed: true,
+    items: [
+      { text: '故障排除', link: '/zh-CN/guide/troubleshooting' },
+      { text: '术语表', link: '/zh-CN/reference/glossary' }
+    ]
+  }
+]
+
+const chineseDeveloperSidebar: DefaultTheme.SidebarItem[] = [
+  {
     text: '开发者文档',
+    collapsed: false,
     items: [
       { text: '开发者概览', link: '/zh-CN/developer/' },
       { text: '从源码构建', link: '/zh-CN/developer/building' },
@@ -72,11 +112,27 @@ const chineseSidebar: DefaultTheme.SidebarItem[] = [
   },
   {
     text: '参与贡献',
+    collapsed: false,
     items: [
       { text: '文档贡献指南', link: '/zh-CN/contributing/documentation' }
     ]
+  },
+  {
+    text: '用户文档',
+    collapsed: true,
+    items: [
+      { text: '用户手册', link: '/zh-CN/guide/' },
+      { text: '制作第一个视频', link: '/zh-CN/guide/first-video' }
+    ]
   }
 ]
+
+const chineseSidebar: DefaultTheme.Sidebar = {
+  '/zh-CN/guide/': chineseUserSidebar,
+  '/zh-CN/reference/': chineseUserSidebar,
+  '/zh-CN/developer/': chineseDeveloperSidebar,
+  '/zh-CN/contributing/': chineseDeveloperSidebar
+}
 
 export default defineConfig({
   title: 'AviQtl-Plus Documentation',
