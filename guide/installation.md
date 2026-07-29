@@ -1,0 +1,57 @@
+---
+title: Install AviQtl-Plus
+description: Download and start AviQtl-Plus on Windows, Linux, or macOS.
+---
+
+# Install AviQtl-Plus
+
+## Download a release
+
+Download a build for your platform from the
+[AviQtl-Plus releases page](https://github.com/GT-610/AviQtl-Plus/releases).
+Extract the archive to a folder you can write to, then start the AviQtl-Plus
+executable.
+
+<ScreenshotPlaceholder
+  src="/images/en/guide/installation/releases.webp"
+  alt="AviQtl-Plus release assets on GitHub"
+  caption="Choose the archive that matches your operating system and architecture."
+  hint="Capture the release assets list with the recommended downloads visible."
+/>
+
+## Platform notes
+
+### Windows
+
+Use a current 64-bit Windows system. If Windows displays a security prompt,
+confirm that the archive came from the official release page before allowing it
+to run.
+
+### Linux
+
+Linux builds require a current Qt 6, FFmpeg, LuaJIT, a Vulkan implementation,
+Carla, and Clang/libc++. An Arch Linux-equivalent environment is the primary
+target. On older distributions, using an Arch container through Distrobox is
+recommended.
+
+You may need to grant execute permission after extracting the archive:
+
+```bash
+chmod +x AviQtl
+./AviQtl
+```
+
+### macOS
+
+Open the application bundle from Finder. If macOS blocks the first launch,
+review the application in **System Settings → Privacy & Security** and allow it
+only when it was downloaded from the official release.
+
+## First launch checklist
+
+- The preview window opens without a graphics initialization error.
+- The timeline and settings windows can be shown from the application menus.
+- Audio and video files can be selected from a local folder.
+
+If startup fails, see [Troubleshooting](./troubleshooting). Developers who want
+to compile the application should use [Build from source](/developer/building).

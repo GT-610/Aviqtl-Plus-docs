@@ -1,0 +1,30 @@
+---
+title: Developer documentation
+description: Build, understand, extend, and contribute to AviQtl-Plus.
+---
+
+# Developer documentation
+
+AviQtl-Plus combines a C++23 and Qt 6 application core with Qt Quick UI, QRhi
+rendering, ECS-oriented timeline data, FFmpeg media processing, LuaJIT plugins,
+and QML/GLSL effect packages.
+
+## Start contributing
+
+1. Read [Build from source](./building).
+2. Review the main repository's
+   [contribution guide](https://github.com/GT-610/AviQtl-Plus/blob/main/CONTRIBUTING.md).
+3. Run the relevant automated tests before and after a change.
+4. Update user documentation when behavior or interface labels change.
+
+## Extension paths
+
+- [Effects and objects](./effects): package JSON metadata, QML integration, and
+  fragment or compute shaders.
+- [Plugin development](./plugins): LuaJIT automation, lifecycle hooks,
+  permissions, and package distribution.
+- Native application development: C++, Qt Quick, timeline services, media
+  decoding, rendering, audio, and tests in the main repository.
+
+User workflows remain in the [user guide](/guide/) so API and architecture
+details do not interrupt task-oriented instructions.
