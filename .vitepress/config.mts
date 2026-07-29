@@ -134,6 +134,53 @@ const chineseSidebar: DefaultTheme.Sidebar = {
   '/zh-CN/contributing/': chineseDeveloperSidebar
 }
 
+const englishThemeConfig: DefaultTheme.Config = {
+  nav: [
+    { text: 'User guide', link: '/guide/' },
+    { text: 'Developer', link: '/developer/' },
+    { text: 'Contribute', link: '/contributing/documentation' }
+  ],
+  sidebar: englishSidebar,
+  outlineTitle: 'On this page',
+  docFooter: {
+    prev: 'Previous page',
+    next: 'Next page'
+  },
+  lastUpdated: {
+    text: 'Last updated'
+  },
+  editLink: {
+    pattern: `${repository}/edit/main/:path`,
+    text: 'Edit this page on GitHub'
+  }
+}
+
+const chineseThemeConfig: DefaultTheme.Config = {
+  nav: [
+    { text: '用户手册', link: '/zh-CN/guide/' },
+    { text: '开发者', link: '/zh-CN/developer/' },
+    { text: '参与贡献', link: '/zh-CN/contributing/documentation' }
+  ],
+  sidebar: chineseSidebar,
+  outlineTitle: '本页目录',
+  docFooter: {
+    prev: '上一页',
+    next: '下一页'
+  },
+  lastUpdated: {
+    text: '最后更新'
+  },
+  returnToTopLabel: '返回顶部',
+  sidebarMenuLabel: '菜单',
+  darkModeSwitchLabel: '主题',
+  lightModeSwitchTitle: '切换到浅色主题',
+  darkModeSwitchTitle: '切换到深色主题',
+  editLink: {
+    pattern: `${repository}/edit/main/:path`,
+    text: '在 GitHub 上编辑此页'
+  }
+}
+
 export default defineConfig({
   title: 'AviQtl-Plus Documentation',
   description: 'User and developer documentation for AviQtl-Plus',
@@ -144,7 +191,8 @@ export default defineConfig({
       label: 'English',
       lang: 'en',
       title: 'AviQtl-Plus Documentation',
-      description: 'Learn video editing with AviQtl-Plus or contribute to its development.'
+      description: 'Learn video editing with AviQtl-Plus or contribute to its development.',
+      themeConfig: englishThemeConfig
     },
     zhCN: {
       label: '简体中文',
@@ -152,6 +200,7 @@ export default defineConfig({
       link: '/zh-CN/',
       title: 'AviQtl-Plus 文档',
       description: '学习使用 AviQtl-Plus 制作视频，或参与项目开发。',
+      themeConfig: chineseThemeConfig,
       markdown: {
         container: {
           tipLabel: '提示',
@@ -199,53 +248,6 @@ export default defineConfig({
               }
             }
           }
-        }
-      }
-    },
-    locales: {
-      root: {
-        nav: [
-          { text: 'User guide', link: '/guide/' },
-          { text: 'Developer', link: '/developer/' },
-          { text: 'Contribute', link: '/contributing/documentation' }
-        ],
-        sidebar: englishSidebar,
-        outlineTitle: 'On this page',
-        docFooter: {
-          prev: 'Previous page',
-          next: 'Next page'
-        },
-        lastUpdated: {
-          text: 'Last updated'
-        },
-        editLink: {
-          pattern: `${repository}/edit/main/:path`,
-          text: 'Edit this page on GitHub'
-        }
-      },
-      zhCN: {
-        nav: [
-          { text: '用户手册', link: '/zh-CN/guide/' },
-          { text: '开发者', link: '/zh-CN/developer/' },
-          { text: '参与贡献', link: '/zh-CN/contributing/documentation' }
-        ],
-        sidebar: chineseSidebar,
-        outlineTitle: '本页目录',
-        docFooter: {
-          prev: '上一页',
-          next: '下一页'
-        },
-        lastUpdated: {
-          text: '最后更新'
-        },
-        returnToTopLabel: '返回顶部',
-        sidebarMenuLabel: '菜单',
-        darkModeSwitchLabel: '主题',
-        lightModeSwitchTitle: '切换到浅色主题',
-        darkModeSwitchTitle: '切换到深色主题',
-        editLink: {
-          pattern: `${repository}/edit/main/:path`,
-          text: '在 GitHub 上编辑此页'
         }
       }
     }
