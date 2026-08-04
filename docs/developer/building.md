@@ -41,6 +41,63 @@ MSVC is supported for development but requires Visual Studio Build Tools, a
 matching Qt MSVC installation, and vcpkg. See `python3 BUILD.py --help` for the
 current options.
 
+## Platform notes
+
+### Linux
+
+On Linux, the build environment is isolated using a distrobox/podman container
+by default.
+
+1. **Install dependencies**
+   - Pacman: `sudo pacman -S --needed distrobox podman python git`
+   - APT: `sudo apt install distrobox podman python3 git`
+   - DNF: `sudo dnf install distrobox podman python3 git`
+2. **Build**
+   - `python3 BUILD.py --arch`
+3. **Run**
+   - `./build/AviQtl`
+
+The container also installs Qt 6, LuaJIT, a Vulkan implementation (for example
+Mesa), FFmpeg, Carla, and clang (which provides libc++).
+
+### macOS
+
+On macOS, `BUILD.py` checks and installs dependencies via Homebrew (CMake,
+Ninja, Qt6, etc.), then runs `macdeployqt` and `codesign` to create a `.app`
+bundle.
+
+1. **Install dependencies**
+   - `brew install python git`
+2. **Build**
+   - `python3 BUILD.py --xcode`
+3. **Run**
+   - `open ./build/AviQtl.app`
+
+### Windows (MSYS2)
+
+1. **Install dependencies**
+   - `pacman -S git mingw-w64-ucrt-x86_64-python`
+2. **Build**
+   - `python3 BUILD.py --msys2`
+3. **Run**
+   - `./build/AviQtl.exe`
+
+### Windows (MSVC - not recommended)
+
+MSVC builds are not recommended due to the complexity of environment setup.
+
+1. **Additional prerequisites**
+   - Visual Studio 2022 Build Tools with C++ toolset
+   - Official Qt MSVC x64 build (for example `msvc2022_64`)
+   - vcpkg (can be specified via `VCPKG_ROOT`; `BUILD.py` will attempt to fetch
+     it if not found)
+2. **Build**
+   - `python3 BUILD.py --msvc --qt-dir <Qt installation directory>`
+   - If `--qt-dir` is omitted, automatic detection from `QT_MSVC_DIR` and
+     similar environment variables is attempted.
+3. **Run**
+   - `.\build\AviQtl.exe`
+
 ## Qt version compatibility
 
 The project currently uses Qt private modules for ZIP handling, QRhi

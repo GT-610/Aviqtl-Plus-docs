@@ -8,6 +8,7 @@ const englishUserSidebar: DefaultTheme.SidebarItem[] = [
     collapsed: false,
     items: [
       { text: 'Welcome', link: '/guide/start-here/' },
+      { text: 'About the project', link: '/guide/start-here/about' },
       { text: 'Install AviQtl-Plus', link: '/guide/start-here/installation' },
       { text: 'Make your first video', link: '/guide/start-here/first-video' }
     ]
@@ -27,6 +28,7 @@ const englishUserSidebar: DefaultTheme.SidebarItem[] = [
     text: 'Help and reference',
     collapsed: true,
     items: [
+      { text: 'Frequently asked questions', link: '/guide/help-and-reference/faq' },
       { text: 'Troubleshooting', link: '/guide/help-and-reference/troubleshooting' },
       { text: 'Glossary', link: '/reference/glossary' }
     ]
@@ -42,6 +44,15 @@ const englishDeveloperSidebar: DefaultTheme.SidebarItem[] = [
       { text: 'Build from source', link: '/developer/building' },
       { text: 'Effects and objects', link: '/developer/effects' },
       { text: 'Plugin development', link: '/developer/plugins' }
+    ]
+  },
+  {
+    text: 'Product targets and workflows',
+    collapsed: false,
+    items: [
+      { text: 'AviUtl operability targets', link: '/developer/operability-targets' },
+      { text: 'Timeline edit target rules', link: '/developer/timeline-edit-targets' },
+      { text: 'Release checklist', link: '/developer/release-checklist' }
     ]
   },
   {
@@ -74,6 +85,7 @@ const chineseUserSidebar: DefaultTheme.SidebarItem[] = [
     collapsed: false,
     items: [
       { text: '欢迎', link: '/zh-CN/guide/start-here/' },
+      { text: '关于项目', link: '/zh-CN/guide/start-here/about' },
       { text: '安装 AviQtl-Plus', link: '/zh-CN/guide/start-here/installation' },
       { text: '制作第一个视频', link: '/zh-CN/guide/start-here/first-video' }
     ]
@@ -93,6 +105,7 @@ const chineseUserSidebar: DefaultTheme.SidebarItem[] = [
     text: '帮助与参考',
     collapsed: true,
     items: [
+      { text: '常见问题', link: '/zh-CN/guide/help-and-reference/faq' },
       { text: '故障排除', link: '/zh-CN/guide/help-and-reference/troubleshooting' },
       { text: '术语表', link: '/zh-CN/reference/glossary' }
     ]
@@ -108,6 +121,15 @@ const chineseDeveloperSidebar: DefaultTheme.SidebarItem[] = [
       { text: '从源码构建', link: '/zh-CN/developer/building' },
       { text: '效果与对象', link: '/zh-CN/developer/effects' },
       { text: '插件开发', link: '/zh-CN/developer/plugins' }
+    ]
+  },
+  {
+    text: '产品目标与工作流',
+    collapsed: false,
+    items: [
+      { text: 'AviUtl 操作体验目标', link: '/zh-CN/developer/operability-targets' },
+      { text: '时间线编辑目标规则', link: '/zh-CN/developer/timeline-edit-targets' },
+      { text: '发布检查清单', link: '/zh-CN/developer/release-checklist' }
     ]
   },
   {

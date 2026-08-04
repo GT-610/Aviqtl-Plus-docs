@@ -26,5 +26,13 @@ and QML/GLSL effect packages.
 - Native application development: C++, Qt Quick, timeline services, media
   decoding, rendering, audio, and tests in the main repository.
 
+## Product targets and workflows
+
+- [AviUtl operability targets](./operability-targets): the editing-model
+  compatibility goals that guide development.
+- [Timeline edit target rules](./timeline-edit-targets): where timeline commands
+  act.
+- [Release checklist](./release-checklist): requirements for a valid release.
+
 User workflows remain in the [user guide](/guide/start-here/) so API and architecture
 details do not interrupt task-oriented instructions.

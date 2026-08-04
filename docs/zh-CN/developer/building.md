@@ -37,6 +37,57 @@ python3 BUILD.py --msys2
 
 MSVC 可用于开发，但需要 Visual Studio Build Tools、匹配的 Qt MSVC 安装和 vcpkg。当前参数请查看 `python3 BUILD.py --help`。
 
+## 平台说明
+
+### Linux
+
+在 Linux 上，默认使用 distrobox/podman 容器隔离构建环境。
+
+1. **安装依赖**
+   - Pacman: `sudo pacman -S --needed distrobox podman python git`
+   - APT: `sudo apt install distrobox podman python3 git`
+   - DNF: `sudo dnf install distrobox podman python3 git`
+2. **构建**
+   - `python3 BUILD.py --arch`
+3. **运行**
+   - `./build/AviQtl`
+
+容器还会安装 Qt 6、LuaJIT、Vulkan 实现（例如 Mesa）、FFmpeg、Carla 和 clang（提供 libc++）。
+
+### macOS
+
+在 macOS 上，`BUILD.py` 通过 Homebrew 检查并安装依赖（CMake、Ninja、Qt6 等），然后执行 `macdeployqt` 和 `codesign` 创建 `.app` 包。
+
+1. **安装依赖**
+   - `brew install python git`
+2. **构建**
+   - `python3 BUILD.py --xcode`
+3. **运行**
+   - `open ./build/AviQtl.app`
+
+### Windows (MSYS2)
+
+1. **安装依赖**
+   - `pacman -S git mingw-w64-ucrt-x86_64-python`
+2. **构建**
+   - `python3 BUILD.py --msys2`
+3. **运行**
+   - `./build/AviQtl.exe`
+
+### Windows (MSVC - 不推荐)
+
+由于环境配置复杂，不推荐使用 MSVC 构建。
+
+1. **额外准备**
+   - Visual Studio 2022 Build Tools 的 C++ 工具集
+   - 官方 Qt 的 MSVC x64 版本（例如 `msvc2022_64`）
+   - vcpkg（可通过 `VCPKG_ROOT` 环境变量指定；如未找到，`BUILD.py` 将尝试自动获取）
+2. **构建**
+   - `python3 BUILD.py --msvc --qt-dir <Qt 安装目录>`
+   - 如省略 `--qt-dir`，将尝试从 `QT_MSVC_DIR` 等环境变量自动检测。
+3. **运行**
+   - `.\build\AviQtl.exe`
+
 ## Qt 版本兼容性
 
 项目目前使用 Qt 私有模块处理 ZIP、QRhi 集成和着色器工具。构建时与运行时的 Qt 补丁版本必须一致；升级 Qt 包后需要重新构建。

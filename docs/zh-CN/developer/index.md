@@ -20,4 +20,10 @@ AviQtl-Plus 将 C++23 与 Qt 6 应用核心、Qt Quick 界面、QRhi 渲染、�
 - [插件开发](./plugins)：LuaJIT 自动化、生命周期钩子、权限和包分发。
 - 原生应用开发：主仓库中的 C++、Qt Quick、时间线服务、媒体解码、渲染、音频与测试。
 
+## 产品目标与工作流
+
+- [AviUtl 操作体验目标](./operability-targets)：指导开发的编辑模型兼容目标。
+- [时间线编辑目标规则](./timeline-edit-targets)：时间线命令作用于何处。
+- [发布检查清单](./release-checklist)：有效发布版本的要求。
+
 用户工作流保留在[用户手册](/zh-CN/guide/start-here/)中，避免 API 和架构内容打断任务说明。
