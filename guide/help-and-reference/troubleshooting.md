@@ -3,6 +3,12 @@ title: Troubleshooting
 description: Diagnose startup, media, preview, performance, plugin, and export problems.
 ---
 
+::: warning
+
+This page is not finished yet.
+
+:::
+
 # Troubleshooting
 
 Start by saving a copy of the project and recording the application version,

@@ -3,6 +3,12 @@ title: 效果与动画
 description: 修改片段参数、排列效果，并使用关键帧制作动画。
 ---
 
+::: warning
+
+本页面尚未完成。
+
+:::
+
 # 效果与动画
 
 ## 参数与效果
@@ -22,12 +28,9 @@ description: 修改片段参数、排列效果，并使用关键帧制作动画�
 5. 修改数值并创建或更新第二个关键帧。
 6. 预览两个关键帧之间的区间。
 
-<ScreenshotPlaceholder
-  src="/images/zh-CN/guide/effects-animation/keyframes.webp"
-  alt="一个变换参数包含两个关键帧"
-  caption="关键帧属于片段参数，并以片段内部时间进行计算。"
-  hint="截取带有两个可见关键帧和插值控件的变换参数。"
-/>
+<!-- 添加截图：![一个变换参数包含两个关键帧](/images/zh-CN/guide/effects-animation/keyframes.webp) -->
+
+关键帧属于片段参数，并以片段内部时间进行计算。
 
 ## 动画建议
 

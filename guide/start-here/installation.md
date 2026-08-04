@@ -1,5 +1,5 @@
 ---
-title: Install AviQtl-Plus
+title: Install
 description: Download and start AviQtl-Plus on Windows, Linux, or macOS.
 ---
 
@@ -12,12 +12,9 @@ Download a build for your platform from the
 Extract the archive to a folder you can write to, then start the AviQtl-Plus
 executable.
 
-<ScreenshotPlaceholder
-  src="/images/en/guide/installation/releases.webp"
-  alt="AviQtl-Plus release assets on GitHub"
-  caption="Choose the archive that matches your operating system and architecture."
-  hint="Capture the release assets list with the recommended downloads visible."
-/>
+![AviQtl-Plus release assets on GitHub](/images/guide/installation/release-assets.png)
+
+Choose the archive that matches your operating system and architecture.
 
 ## Platform notes
 
@@ -41,6 +38,8 @@ chmod +x AviQtl
 ./AviQtl
 ```
 
+We're also planning platform-specific packages and AppImage release. These will be shipped in the future.
+
 ### macOS
 
 Open the application bundle from Finder. If macOS blocks the first launch,
@@ -53,5 +52,7 @@ only when it was downloaded from the official release.
 - The timeline and settings windows can be shown from the application menus.
 - Audio and video files can be selected from a local folder.
 
-If startup fails, see [Troubleshooting](./troubleshooting). Developers who want
-to compile the application should use [Build from source](/developer/building).
+If startup fails, see [Troubleshooting](../help-and-reference/troubleshooting). 
+
+## Install from source code
+See [Build from source](/developer/building).

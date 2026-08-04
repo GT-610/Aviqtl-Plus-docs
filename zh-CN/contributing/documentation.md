@@ -31,18 +31,13 @@ description: 编写、翻译、审阅 AviQtl-Plus 手册并补充截图。
 
 ## 添加截图
 
-页面使用带有预设路径的 `ScreenshotPlaceholder`：
+先在 `public/` 下添加图片文件，再使用 VitePress 标准的 Markdown 图片语法：
 
 ```md
-<ScreenshotPlaceholder
-  src="/images/zh-CN/guide/example.webp"
-  alt="对界面状态有意义的描述"
-  caption="读者应当注意的内容。"
-  hint="提供给截图贡献者的要求。"
-/>
+![对界面状态有意义的描述](/images/zh-CN/guide/example.webp)
 ```
 
-将图片放到 `public/` 下的对应路径后，页面会自动显示图片。英文界面截图放在 `images/en/`，简体中文截图放在 `images/zh-CN/`。
+在 `public/` 下添加与路径对应的图片；上述示例对应 `public/images/zh-CN/guide/example.webp`。英文截图放在 `images/en/`，简体中文截图放在 `images/zh-CN/`。
 
 ## 预览修改
 

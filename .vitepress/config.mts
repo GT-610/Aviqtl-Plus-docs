@@ -7,27 +7,27 @@ const englishUserSidebar: DefaultTheme.SidebarItem[] = [
     text: 'Start here',
     collapsed: false,
     items: [
-      { text: 'Welcome', link: '/guide/' },
-      { text: 'Install AviQtl-Plus', link: '/guide/installation' },
-      { text: 'Make your first video', link: '/guide/first-video' }
+      { text: 'Welcome', link: '/guide/start-here/' },
+      { text: 'Install AviQtl-Plus', link: '/guide/start-here/installation' },
+      { text: 'Make your first video', link: '/guide/start-here/first-video' }
     ]
   },
   {
     text: 'User guide',
     collapsed: false,
     items: [
-      { text: 'Interface overview', link: '/guide/interface' },
-      { text: 'Projects and media', link: '/guide/projects-media' },
-      { text: 'Timeline editing', link: '/guide/timeline' },
-      { text: 'Effects and animation', link: '/guide/effects-animation' },
-      { text: 'Exporting', link: '/guide/exporting' }
+      { text: 'Interface overview', link: '/guide/user-guide/interface' },
+      { text: 'Projects and media', link: '/guide/user-guide/projects-media' },
+      { text: 'Timeline editing', link: '/guide/user-guide/timeline' },
+      { text: 'Effects and animation', link: '/guide/user-guide/effects-animation' },
+      { text: 'Exporting', link: '/guide/user-guide/exporting' }
     ]
   },
   {
     text: 'Help and reference',
     collapsed: true,
     items: [
-      { text: 'Troubleshooting', link: '/guide/troubleshooting' },
+      { text: 'Troubleshooting', link: '/guide/help-and-reference/troubleshooting' },
       { text: 'Glossary', link: '/reference/glossary' }
     ]
   }
@@ -55,8 +55,8 @@ const englishDeveloperSidebar: DefaultTheme.SidebarItem[] = [
     text: 'User documentation',
     collapsed: true,
     items: [
-      { text: 'User guide', link: '/guide/' },
-      { text: 'Make your first video', link: '/guide/first-video' }
+      { text: 'User guide', link: '/guide/start-here/' },
+      { text: 'Make your first video', link: '/guide/start-here/first-video' }
     ]
   }
 ]
@@ -73,27 +73,27 @@ const chineseUserSidebar: DefaultTheme.SidebarItem[] = [
     text: '从这里开始',
     collapsed: false,
     items: [
-      { text: '欢迎', link: '/zh-CN/guide/' },
-      { text: '安装 AviQtl-Plus', link: '/zh-CN/guide/installation' },
-      { text: '制作第一个视频', link: '/zh-CN/guide/first-video' }
+      { text: '欢迎', link: '/zh-CN/guide/start-here/' },
+      { text: '安装 AviQtl-Plus', link: '/zh-CN/guide/start-here/installation' },
+      { text: '制作第一个视频', link: '/zh-CN/guide/start-here/first-video' }
     ]
   },
   {
     text: '用户手册',
     collapsed: false,
     items: [
-      { text: '界面概览', link: '/zh-CN/guide/interface' },
-      { text: '项目与媒体', link: '/zh-CN/guide/projects-media' },
-      { text: '时间线编辑', link: '/zh-CN/guide/timeline' },
-      { text: '效果与动画', link: '/zh-CN/guide/effects-animation' },
-      { text: '导出', link: '/zh-CN/guide/exporting' }
+      { text: '界面概览', link: '/zh-CN/guide/user-guide/interface' },
+      { text: '项目与媒体', link: '/zh-CN/guide/user-guide/projects-media' },
+      { text: '时间线编辑', link: '/zh-CN/guide/user-guide/timeline' },
+      { text: '效果与动画', link: '/zh-CN/guide/user-guide/effects-animation' },
+      { text: '导出', link: '/zh-CN/guide/user-guide/exporting' }
     ]
   },
   {
     text: '帮助与参考',
     collapsed: true,
     items: [
-      { text: '故障排除', link: '/zh-CN/guide/troubleshooting' },
+      { text: '故障排除', link: '/zh-CN/guide/help-and-reference/troubleshooting' },
       { text: '术语表', link: '/zh-CN/reference/glossary' }
     ]
   }
@@ -121,8 +121,8 @@ const chineseDeveloperSidebar: DefaultTheme.SidebarItem[] = [
     text: '用户文档',
     collapsed: true,
     items: [
-      { text: '用户手册', link: '/zh-CN/guide/' },
-      { text: '制作第一个视频', link: '/zh-CN/guide/first-video' }
+      { text: '用户手册', link: '/zh-CN/guide/start-here/' },
+      { text: '制作第一个视频', link: '/zh-CN/guide/start-here/first-video' }
     ]
   }
 ]
@@ -136,7 +136,7 @@ const chineseSidebar: DefaultTheme.Sidebar = {
 
 const englishThemeConfig: DefaultTheme.Config = {
   nav: [
-    { text: 'User guide', link: '/guide/' },
+    { text: 'User guide', link: '/guide/start-here/' },
     { text: 'Developer', link: '/developer/' },
     { text: 'Contribute', link: '/contributing/documentation' }
   ],
@@ -157,7 +157,7 @@ const englishThemeConfig: DefaultTheme.Config = {
 
 const chineseThemeConfig: DefaultTheme.Config = {
   nav: [
-    { text: '用户手册', link: '/zh-CN/guide/' },
+    { text: '用户手册', link: '/zh-CN/guide/start-here/' },
     { text: '开发者', link: '/zh-CN/developer/' },
     { text: '参与贡献', link: '/zh-CN/contributing/documentation' }
   ],
@@ -194,7 +194,7 @@ export default defineConfig({
       description: 'Learn video editing with AviQtl-Plus or contribute to its development.',
       themeConfig: englishThemeConfig
     },
-    zhCN: {
+    'zh-CN': {
       label: '简体中文',
       lang: 'zh-CN',
       link: '/zh-CN/',
@@ -225,7 +225,7 @@ export default defineConfig({
       provider: 'local',
       options: {
         locales: {
-          zhCN: {
+          'zh-CN': {
             translations: {
               button: {
                 buttonText: '搜索',

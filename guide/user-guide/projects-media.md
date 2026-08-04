@@ -3,6 +3,12 @@ title: Projects and media
 description: Set up projects, organize source media, save safely, and relink missing files.
 ---
 
+::: warning
+
+This page is not finished yet.
+
+:::
+
 # Projects and media
 
 ## Project settings
@@ -39,12 +45,9 @@ A project can still open when referenced files are missing. AviQtl-Plus reports
 the missing items and provides a management dialog where each item can be
 replaced with a compatible file.
 
-<ScreenshotPlaceholder
-  src="/images/en/guide/projects-media/missing-media.webp"
-  alt="Missing media notification and replacement controls"
-  caption="Relink missing files, verify the timeline, and save the updated project."
-  hint="Capture the non-blocking missing-media notice and the Manage action."
-/>
+<!-- Add screenshot: ![Missing media notification and replacement controls](/images/en/guide/projects-media/missing-media.webp) -->
+
+Relink missing files, verify the timeline, and save the updated project.
 
 After relinking, seek through every affected clip. A replacement file may have
 a different duration, resolution, frame rate, or audio layout even when its file

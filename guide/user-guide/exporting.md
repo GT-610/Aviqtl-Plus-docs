@@ -3,6 +3,12 @@ title: Exporting
 description: Turn an AviQtl-Plus timeline into a video or image sequence.
 ---
 
+::: warning
+
+This page is not finished yet.
+
+:::
+
 # Exporting
 
 Export creates a deliverable from the current project. Save the project and
@@ -16,12 +22,9 @@ preview the intended frame range before opening **Export Media**.
 - Choose an output folder with enough free space.
 - Avoid overwriting the only copy of an earlier export.
 
-<ScreenshotPlaceholder
-  src="/images/en/guide/exporting/export-dialog.webp"
-  alt="AviQtl-Plus export dialog with output path and frame range"
-  caption="The exact encoder choices depend on the platform and available multimedia components."
-  hint="Capture the complete export dialog using safe example values."
-/>
+<!-- Add screenshot: ![AviQtl-Plus export dialog with output path and frame range](/images/en/guide/exporting/export-dialog.webp) -->
+
+The exact encoder choices depend on the platform and available multimedia components.
 
 ## Frame range
 
@@ -40,4 +43,4 @@ Open the exported file in a separate media player and verify:
 - the first and last intended frames.
 
 If export fails, record the exact error message and see
-[Troubleshooting](./troubleshooting).
+[Troubleshooting](../help-and-reference/troubleshooting).

@@ -3,6 +3,12 @@ title: 项目与媒体
 description: 设置项目、整理源媒体、安全保存并重新链接缺失文件。
 ---
 
+::: warning
+
+本页面尚未完成。
+
+:::
+
 # 项目与媒体
 
 ## 项目设置
@@ -33,11 +39,8 @@ my-video/
 
 即使引用文件缺失，项目仍可打开。AviQtl-Plus 会列出缺失项目，并提供管理对话框，将其替换为兼容文件。
 
-<ScreenshotPlaceholder
-  src="/images/zh-CN/guide/projects-media/missing-media.webp"
-  alt="缺失媒体通知以及替换控件"
-  caption="重新链接文件后检查时间线，并保存更新后的项目。"
-  hint="截取非阻塞式缺失媒体提示和“管理”操作。"
-/>
+<!-- 添加截图：![缺失媒体通知以及替换控件](/images/zh-CN/guide/projects-media/missing-media.webp) -->
+
+重新链接文件后检查时间线，并保存更新后的项目。
 
 替换后应检查每个受影响片段。即使文件类型兼容，新文件的时长、分辨率、帧率或声道布局也可能不同。

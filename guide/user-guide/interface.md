@@ -3,18 +3,21 @@ title: Interface overview
 description: Understand the preview, timeline, settings, menus, and transport controls.
 ---
 
+::: warning
+
+This page is not finished yet.
+
+:::
+
 # Interface overview
 
 AviQtl-Plus uses separate editing surfaces rather than a single fixed panel
 layout. The main preview, timeline, and object settings can be shown from the
 application menus and arranged to fit your screen.
 
-<ScreenshotPlaceholder
-  src="/images/en/guide/interface/workspace-overview.webp"
-  alt="AviQtl-Plus preview, timeline, and object settings windows"
-  caption="A typical workspace keeps the preview visible while the timeline and selected-object settings remain accessible."
-  hint="Capture a complete, clean editing workspace and annotate the three primary areas."
-/>
+<!-- Add screenshot: ![AviQtl-Plus preview, timeline, and object settings windows](/images/en/guide/interface/workspace-overview.webp) -->
+
+A typical workspace keeps the preview visible while the timeline and selected-object settings remain accessible.
 
 ## Preview
 

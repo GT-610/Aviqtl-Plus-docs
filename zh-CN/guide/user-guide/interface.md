@@ -3,16 +3,19 @@ title: 界面概览
 description: 了解预览、时间线、设置、菜单与播放控制。
 ---
 
+::: warning
+
+本页面尚未完成。
+
+:::
+
 # 界面概览
 
 AviQtl-Plus 使用多个编辑窗口，而不是固定在单个面板布局中。主预览、时间线和对象设置都可以通过应用菜单显示，并按照屏幕空间自由摆放。
 
-<ScreenshotPlaceholder
-  src="/images/zh-CN/guide/interface/workspace-overview.webp"
-  alt="AviQtl-Plus 的预览、时间线和对象设置窗口"
-  caption="典型工作区会同时保留预览、时间线和选中对象的设置。"
-  hint="截取整洁的完整编辑工作区，并标注三个主要区域。"
-/>
+<!-- 添加截图：![AviQtl-Plus 的预览、时间线和对象设置窗口](/images/zh-CN/guide/interface/workspace-overview.webp) -->
+
+典型工作区会同时保留预览、时间线和选中对象的设置。
 
 ## 预览
 

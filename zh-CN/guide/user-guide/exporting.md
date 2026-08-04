@@ -3,6 +3,12 @@ title: 导出
 description: 将 AviQtl-Plus 时间线生成视频或图像序列。
 ---
 
+::: warning
+
+本页面尚未完成。
+
+:::
+
 # 导出
 
 导出会根据当前项目生成可交付文件。打开“导出媒体”前，先保存项目并预览需要导出的帧范围。
@@ -15,12 +21,9 @@ description: 将 AviQtl-Plus 时间线生成视频或图像序列。
 - 选择空间充足且可写入的输出目录。
 - 不要覆盖早期导出的唯一副本。
 
-<ScreenshotPlaceholder
-  src="/images/zh-CN/guide/exporting/export-dialog.webp"
-  alt="包含输出路径和帧范围的 AviQtl-Plus 导出对话框"
-  caption="可用编码器取决于平台和已安装的多媒体组件。"
-  hint="使用安全的示例数值截取完整导出对话框。"
-/>
+<!-- 添加截图：![包含输出路径和帧范围的 AviQtl-Plus 导出对话框](/images/zh-CN/guide/exporting/export-dialog.webp) -->
+
+可用编码器取决于平台和已安装的多媒体组件。
 
 ## 帧范围
 
@@ -36,4 +39,4 @@ description: 将 AviQtl-Plus 时间线生成视频或图像序列。
 - 音频是否存在、同步且音量合理；
 - 第一帧和最后一帧是否符合预期。
 
-导出失败时记录完整错误信息，并阅读[故障排除](./troubleshooting)。
+导出失败时记录完整错误信息，并阅读[故障排除](../help-and-reference/troubleshooting)。

@@ -3,6 +3,12 @@ title: 时间线编辑
 description: 精确选择、移动、裁剪、分割、叠放和复制片段。
 ---
 
+::: warning
+
+本页面尚未完成。
+
+:::
+
 # 时间线编辑
 
 时间线决定一个项目在**何时**出现，以及位于**哪个图层**。AviQtl-Plus 将 AviUtl 风格的图层对象与常见现代编辑命令结合起来。
@@ -20,12 +26,9 @@ description: 精确选择、移动、裁剪、分割、叠放和复制片段。
 - **复制、剪切、粘贴、创建副本：** 重用片段及其设置。
 - **微移：** 将选中片段移动一帧，实现精确对齐。
 
-<ScreenshotPlaceholder
-  src="/images/zh-CN/guide/timeline/core-operations.webp"
-  alt="多个片段排列在 AviQtl-Plus 时间线的不同图层"
-  caption="横向位置控制时间，上方图层可以合成在下方图层之上。"
-  hint="用一个小型时间线演示移动、裁剪、分割和图层重叠。"
-/>
+<!-- 添加截图：![多个片段排列在 AviQtl-Plus 时间线的不同图层](/images/zh-CN/guide/timeline/core-operations.webp) -->
+
+横向位置控制时间，上方图层可以合成在下方图层之上。
 
 ## 图层
 

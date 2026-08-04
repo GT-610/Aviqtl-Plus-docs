@@ -3,6 +3,12 @@ title: Effects and animation
 description: Modify clip parameters, order effects, and animate values with keyframes.
 ---
 
+::: warning
+
+This page is not finished yet.
+
+:::
+
 # Effects and animation
 
 ## Parameters and effects
@@ -27,12 +33,9 @@ selected interpolation.
 5. Change the value and create or update the second keyframe.
 6. Preview the interval between them.
 
-<ScreenshotPlaceholder
-  src="/images/en/guide/effects-animation/keyframes.webp"
-  alt="Two keyframes for an animated transform parameter"
-  caption="Keyframes belong to a clip parameter and are evaluated relative to the clip."
-  hint="Capture a transform parameter with two visible keyframes and interpolation controls."
-/>
+<!-- Add screenshot: ![Two keyframes for an animated transform parameter](/images/en/guide/effects-animation/keyframes.webp) -->
+
+Keyframes belong to a clip parameter and are evaluated relative to the clip.
 
 ## Good animation practice
 

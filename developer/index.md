@@ -26,5 +26,5 @@ and QML/GLSL effect packages.
 - Native application development: C++, Qt Quick, timeline services, media
   decoding, rendering, audio, and tests in the main repository.
 
-User workflows remain in the [user guide](/guide/) so API and architecture
+User workflows remain in the [user guide](/guide/start-here/) so API and architecture
 details do not interrupt task-oriented instructions.

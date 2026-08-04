@@ -1,8 +1,13 @@
 # Screenshot assets
 
-Documentation pages use the global `ScreenshotPlaceholder` component. Add an
-image at the `src` path already written in a page and the placeholder will be
-replaced automatically.
+Add the image file first, then use standard Markdown image syntax in a page:
+
+```md
+![Meaningful description of the interface state](/images/en/guide/example.webp)
+```
+
+The path begins at `public/`, so the example above refers to
+`public/images/en/guide/example.webp`.
 
 Keep English interface captures under `images/en/` and Simplified Chinese
 captures under `images/zh-CN/`. Prefer WebP or PNG, crop only irrelevant desktop

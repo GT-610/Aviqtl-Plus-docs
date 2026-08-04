@@ -3,6 +3,12 @@ title: 术语表
 description: 常见视频编辑与 AviQtl-Plus 术语。
 ---
 
+::: warning
+
+本页面尚未完成。
+
+:::
+
 # 术语表
 
 **片段（Clip）**

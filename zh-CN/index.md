@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: 开始第一个视频教程
-      link: /zh-CN/guide/first-video
+      link: /zh-CN/guide/start-here/first-video
     - theme: alt
       text: 浏览用户手册
-      link: /zh-CN/guide/
+      link: /zh-CN/guide/start-here/
     - theme: alt
       text: 开发者文档
       link: /zh-CN/developer/

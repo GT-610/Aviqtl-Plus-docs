@@ -3,6 +3,12 @@ title: Timeline editing
 description: Select, move, trim, split, layer, copy, and arrange clips precisely.
 ---
 
+::: warning
+
+This page is not finished yet.
+
+:::
+
 # Timeline editing
 
 The timeline is where you decide **when** an item appears and **which layer** it
@@ -26,12 +32,9 @@ playhead frame.
 - **Copy, cut, paste, duplicate:** reuse clips and their settings.
 - **Nudge:** move selected clips by one frame for precise alignment.
 
-<ScreenshotPlaceholder
-  src="/images/en/guide/timeline/core-operations.webp"
-  alt="Several clips arranged across multiple AviQtl-Plus timeline layers"
-  caption="Horizontal placement controls timing; higher layers can composite over lower layers."
-  hint="Capture a small timeline illustrating move, trim, split, and layered overlap."
-/>
+<!-- Add screenshot: ![Several clips arranged across multiple AviQtl-Plus timeline layers](/images/en/guide/timeline/core-operations.webp) -->
+
+Horizontal placement controls timing; higher layers can composite over lower layers.
 
 ## Layers
 

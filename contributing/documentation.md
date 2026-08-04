@@ -37,20 +37,16 @@ but it should not invent behavior absent from the English source.
 
 ## Add screenshots
 
-Pages use `ScreenshotPlaceholder` with a preselected path:
+Add the image file under `public/` first, then use VitePress's standard
+Markdown image syntax:
 
 ```md
-<ScreenshotPlaceholder
-  src="/images/en/guide/example.webp"
-  alt="Meaningful description of the interface state"
-  caption="What the reader should notice."
-  hint="Instructions for the person taking the screenshot."
-/>
+![Meaningful description of the interface state](/images/en/guide/example.webp)
 ```
 
-Add the image under `public/` at the matching path. The page will display it
-automatically. Use English captures under `images/en/` and Simplified Chinese
-captures under `images/zh-CN/`.
+Add the image under `public/` at the matching path; the example is
+`public/images/en/guide/example.webp`. Use English captures under `images/en/`
+and Simplified Chinese captures under `images/zh-CN/`.
 
 ## Preview changes
 

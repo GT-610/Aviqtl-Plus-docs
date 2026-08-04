@@ -13,19 +13,19 @@ AviQtl-Plus 是一款自由、跨平台的视频编辑器，围绕对象、图�
 
 1. [安装 AviQtl-Plus](./installation)。
 2. 跟随[制作第一个视频](./first-video)完成一次完整工作流。
-3. 需要理解各个窗口时，再阅读[界面概览](./interface)。
+3. 需要理解各个窗口时，再阅读[界面概览](../user-guide/interface)。
 
 ### 我已经使用过 AviUtl
 
-可以直接阅读[时间线编辑](./timeline)。AviQtl-Plus 保留横向时间、纵向图层、以对象为中心的设置、精确数值输入和显式动画控制等熟悉概念，但不能直接加载 AviUtl 或 ExEdit 插件。
+可以直接阅读[时间线编辑](../user-guide/timeline)。AviQtl-Plus 保留横向时间、纵向图层、以对象为中心的设置、精确数值输入和显式动画控制等熟悉概念，但不能直接加载 AviUtl 或 ExEdit 插件。
 
 ### 我需要解决一个具体问题
 
-- 整理源文件：[项目与媒体](./projects-media)
-- 移动、裁剪、分割和叠放片段：[时间线编辑](./timeline)
-- 添加滤镜或运动：[效果与动画](./effects-animation)
-- 生成可交付文件：[导出](./exporting)
-- 处理异常：[故障排除](./troubleshooting)
+- 整理源文件：[项目与媒体](../user-guide/projects-media)
+- 移动、裁剪、分割和叠放片段：[时间线编辑](../user-guide/timeline)
+- 添加滤镜或运动：[效果与动画](../user-guide/effects-animation)
+- 生成可交付文件：[导出](../user-guide/exporting)
+- 处理异常：[故障排除](../help-and-reference/troubleshooting)
 
 ::: tip 术语
 本手册用“片段”表示时间线上的项目，用“对象”表示文本、图形等生成式视觉内容。更多解释见[术语表](/zh-CN/reference/glossary)。
